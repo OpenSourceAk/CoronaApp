@@ -1,9 +1,18 @@
-<p>tabular works!</p>
-<div  *ngIf="test"> 
-    Items to be listed :{{test}}<br>
-    <ul>
-<li *ngFor="let dayitem of statistics.confirmed">
-   {{dayitem.date}}  || {{dayitem.count}}
-  </li>
-</ul>
+<p class="arabicText">جدول الاصابات الوفيات والشفاءات من مرض فايروس كورونا في العراق 
+</p>
+<p class="arabicText">الجدول يحدث كل ساعتين من مصادر عالمية </p>
+
+
+
+
+<small class="arabicText"> 
+        ملاحظة : نحن لا نتحمل مسؤولية دقة البيانات فالجدول هو فقط للاطلاع وليس للاستخدامات الاخرى 
+    </small>
+ <div>
+ 
+<app-my-bar-chart [statistics]='this.statistics'></app-my-bar-chart>
+</div>
+<div id="footer" > 
+<small><a href="http://akrons.ca" > تم تطوير البرنامج بواسطة اكرونز للبرامجيات وتصيم المواقع الالكترونية </a></small>
+
 </div>

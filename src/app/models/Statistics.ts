@@ -4,5 +4,5 @@ export class Statistics {
 
 confirmed : DayItem[] ;
 deaths : DayItem[] ;
-recovered : DayItem[] 
+healed : DayItem[] 
 }
