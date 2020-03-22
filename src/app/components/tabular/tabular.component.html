@@ -1,0 +1,9 @@
+<p>tabular works!</p>
+<div  *ngIf="test"> 
+    Items to be listed :{{test}}<br>
+    <ul>
+<li *ngFor="let dayitem of statistics.confirmed">
+   {{dayitem.date}}  || {{dayitem.count}}
+  </li>
+</ul>
+</div>
